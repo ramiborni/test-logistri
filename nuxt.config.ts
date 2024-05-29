@@ -1,16 +1,13 @@
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image'],
   css: ['~/assets/css/main.css'],
   devServer: {
     port: 7777,
   },
   googleFonts: {
-    families:{
+    families: {
       Poppins: [300, 400, 500],
-      Inter: [300, 400, 500, 600]
-    }
-  }
+      Inter: [300, 400, 500, 600],
+    },
+  },
 })
