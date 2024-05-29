@@ -1,6 +1,8 @@
 <template>
-  <div class="flex">
-    <h3 class="mx-auto mt-20 text-4xl font-medium">LOGISTRI</h3>
+  <div>
+    <h3 class="h-[700px] w-full bg-slate-300 text-4xl font-medium"></h3>
+    <h3 class="h-[700px] w-full bg-red-300 text-4xl font-medium"></h3>
+    <h3 class="h-[700px] w-full bg-blue-300 text-4xl font-medium"></h3>
   </div>
 </template>
 
