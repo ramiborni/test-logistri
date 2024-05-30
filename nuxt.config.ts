@@ -1,5 +1,10 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
+    '@nuxt/image',
+    '@vueuse/nuxt',
+  ],
   css: ['~/assets/css/main.css'],
   devServer: {
     port: 7777,
