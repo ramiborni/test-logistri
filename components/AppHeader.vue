@@ -1,6 +1,6 @@
 <template>
   <div
-    class="v-container fixed top-0 flex w-full items-center justify-between bg-transparent py-5 text-white 2xl:w-[1600px]"
+    class="v-container fixed top-0 flex w-full items-center justify-between bg-transparent py-5 text-white 2xl:max-w-screen-2xl"
   >
     <div class="flex items-center gap-7 xl:gap-14">
       <NuxtImg class="!w-44" src="/logo-white.png" />
