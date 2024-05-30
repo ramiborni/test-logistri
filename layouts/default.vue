@@ -3,6 +3,7 @@
     <div class="w-full">
       <AppHeader />
       <slot />
+      <AppFooter />
     </div>
   </div>
 </template>
