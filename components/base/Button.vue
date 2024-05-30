@@ -13,6 +13,7 @@ interface Props {
   title: string
   variant: 'black' | 'white' | 'transparent'
 }
+const props = defineProps<Props>()
 
 const buttonVariant = ref({
   black: 'bg-black text-white',
@@ -23,6 +24,4 @@ const buttonVariant = ref({
 const currentIcon = computed(() =>
   props.variant === 'black' ? 'arrow-white' : 'arrow',
 )
-
-const props = defineProps<Props>()
 </script>
