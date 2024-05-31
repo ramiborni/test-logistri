@@ -1,5 +1,5 @@
 <template>
-  <div class="v-container bg-[#D9D9D933] 2xl:max-w-screen-2xl">
+  <div class="v-container max-w-screen-xxl bg-smoke">
     <div
       class="grid w-full grid-cols-1 gap-y-4 py-10 lg:grid-cols-3 lg:py-[70px]"
     >

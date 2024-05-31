@@ -1,7 +1,7 @@
 <template>
   <ClientOnly>
     <div
-      class="v-container flex w-full items-center justify-between py-5 transition-colors duration-500 2xl:max-w-screen-2xl"
+      class="v-container z-20 flex w-full max-w-screen-xxl items-center justify-between py-5 transition-colors duration-500"
       :class="[headerClass]"
     >
       <div class="flex items-center gap-7 xl:gap-14">
@@ -45,6 +45,6 @@ const burger = computed(() => (scrolled.value ? 'burger' : 'burger-white'))
 const headerClass = computed(() =>
   scrolled.value
     ? 'bg-white text-black fixed top-0 border-b-[1px] border-gray-200'
-    : 'bg-transparent text-white absolute top-0',
+    : 'bg-transparent text-white fixed top-0',
 )
 </script>

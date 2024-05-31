@@ -7,13 +7,14 @@ export default <Partial<Config>>{
     extend: {},
     colors: {
       ...colors,
+      smoke: '#F7F7F7',
     },
     screens: {
       sm: '640px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
-      '2xl': '1560px',
+      xxl: '1560px',
       wide: '2500px',
     },
   },
