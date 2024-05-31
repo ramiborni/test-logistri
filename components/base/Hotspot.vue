@@ -1,5 +1,10 @@
 <template>
-  <NuxtLink :to="props.url" class="relative aspect-[4/2.9] overflow-hidden">
+  <NuxtLink
+    :to="props.url"
+    class="relative aspect-[4/2.9] overflow-hidden"
+    @mouseenter="isHovered = true"
+    @mouseleave="isHovered = false"
+  >
     <NuxtImg
       :src="props.imageSrc"
       class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-110"
@@ -16,7 +21,11 @@
         {{ props.text }}
       </p>
 
-      <BaseButton title="Läs mer" variant="white" class="mt-5" />
+      <BaseButton
+        title="Läs mer"
+        :variant="isHovered ? 'black' : 'white'"
+        class="mt-5"
+      />
     </div>
   </NuxtLink>
 </template>
@@ -30,4 +39,6 @@ interface Props {
 }
 
 const props = defineProps<Props>()
+
+const isHovered = ref(false)
 </script>
