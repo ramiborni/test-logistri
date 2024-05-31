@@ -3,6 +3,7 @@
     <HomeHero />
     <HomeQuote />
     <HomeKeypoints />
+    <HomeHotspots />
   </div>
 </template>
 

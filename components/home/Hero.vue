@@ -4,7 +4,7 @@
   >
     <div class="v-container w-full">
       <h1
-        class="mx-auto max-w-screen-lg text-center text-[23px] font-medium leading-[30px] tracking-wider text-white lg:text-[35px] lg:leading-[50px]"
+        class="mx-auto max-w-screen-lg text-center text-[23px] font-medium leading-[30px] tracking-[0.6px] text-white lg:text-[35px] lg:leading-[50px]"
       >
         Logistri är ett växande fastighetsbolag som äger och förvaltar
         fastigheter som är operationellt kritiska för våra hyresgästers
