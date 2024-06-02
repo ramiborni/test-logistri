@@ -1,7 +1,9 @@
 interface Link {
   title: string
   url: string
+  text?: string
   date?: string
+  image?: string
 }
 
 interface FooterLink {
@@ -12,7 +14,7 @@ interface FooterLink {
 
 const headerLinks: Link[] = [
   { title: 'Om Logistri', url: '/' },
-  { title: 'Vårt Erbjudande', url: '/' },
+  { title: 'Vårt Erbjudande', url: '/vart-erbjudande' },
   { title: 'Fastighetsportfölj', url: '/' },
   { title: 'Investerare', url: '/' },
 ]
@@ -128,4 +130,38 @@ const pressLinks: Link[] = [
   },
 ]
 
-export { headerLinks, footerLinks, pressLinks, type FooterLink }
+const hotspotsLinks: Link[] = [
+  {
+    title: 'Försäljningsprocess med Logistri',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae tincidunt risus. Proin nulla dui. Lorem ipsum dolor sit amet, consectetur.',
+    image: 'hotspot-1',
+    url: '/',
+  },
+  {
+    title: 'Långsiktigt ägarskap',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae tincidunt risus. Proin nulla dui. Lorem ipsum dolor sit amet, consectetur.',
+    image: 'hotspot-2',
+    url: '/',
+  },
+  {
+    title: 'Logistri som partner',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae tincidunt risus. Proin nulla dui. Lorem ipsum dolor sit amet, consectetur.',
+    image: 'hotspot-3',
+    url: '/',
+  },
+  {
+    title: 'Verksamhetsanpassade lokaler',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae tincidunt risus. Proin nulla dui. Lorem ipsum dolor sit amet, consectetur.',
+    image: 'hotspot-4',
+    url: '/',
+  },
+]
+
+export {
+  headerLinks,
+  footerLinks,
+  pressLinks,
+  hotspotsLinks,
+  type FooterLink,
+  type Link,
+}

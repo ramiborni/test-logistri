@@ -13,6 +13,7 @@
     </div>
 
     <video
+      v-if="y < 700"
       autoplay
       muted
       loop
@@ -26,4 +27,6 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { y } = useWindowScroll()
+</script>
