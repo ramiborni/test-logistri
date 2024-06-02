@@ -1,7 +1,9 @@
 <template>
   <div class="mx-auto max-w-screen-xxl overflow-hidden font-[Inter]">
     <AppHeader />
-    <slot />
+    <div :class="[$route.name !== 'homepage' && 'pt-[77px] lg:pt-[85px]']">
+      <slot />
+    </div>
     <AppFooter />
   </div>
 </template>
