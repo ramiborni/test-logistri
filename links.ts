@@ -1,6 +1,7 @@
 interface Link {
   title: string
   url: string
+  date?: string
 }
 
 interface FooterLink {
@@ -71,4 +72,60 @@ const footerLinks: FooterLink[] = [
   },
 ]
 
-export { headerLinks, footerLinks, type FooterLink }
+const pressLinks: Link[] = [
+  {
+    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique convallis faucibus. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique convallis faucibus. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet, consectetur ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet, consectetue convallis faucibus. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique convallis faucibus. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet, consectetur adinvallis faucibus. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title: 'Lorem tique convallis faucibus. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+  {
+    title: 'Lorem ipsum dolor sit amet faucibus. ',
+    date: '2024-03-12',
+    url: '/',
+  },
+]
+
+export { headerLinks, footerLinks, pressLinks, type FooterLink }

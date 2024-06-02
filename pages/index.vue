@@ -4,6 +4,7 @@
     <HomeQuote />
     <HomeKeypoints />
     <HomeHotspots />
+    <HomePressfeed />
   </div>
 </template>
 
