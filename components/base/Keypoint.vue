@@ -1,6 +1,11 @@
 <template>
   <div class="flex items-start gap-x-5">
-    <NuxtImg src="/icons/keypoint.svg" class="min-w-[50px]" />
+    <NuxtImg
+      src="/icons/keypoint.svg"
+      class="min-w-[50px]"
+      quality="10"
+      loading="lazy"
+    />
 
     <div>
       <p class="text-xl font-light leading-6 tracking-wide">

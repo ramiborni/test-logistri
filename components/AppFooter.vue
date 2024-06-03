@@ -4,7 +4,12 @@
       class="grid w-full grid-cols-1 gap-y-4 py-10 lg:grid-cols-3 lg:py-[70px]"
     >
       <div class="max-w-60">
-        <NuxtImg src="/logo.png" class="w-40 lg:w-56" quality="10" />
+        <NuxtImg
+          src="/logo.png"
+          class="w-40 lg:w-56"
+          quality="10"
+          loading="lazy"
+        />
         <p class="mt-5 text-xs font-light leading-5">
           Logistri utvecklar och förvaltar lager- och lättindustrifastigheter
         </p>

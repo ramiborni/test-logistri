@@ -13,7 +13,7 @@ interface FooterLink {
 }
 
 const headerLinks: Link[] = [
-  { title: 'Om Logistri', url: '/' },
+  { title: 'Om Logistri', url: '/saljproccess' },
   { title: 'Vårt Erbjudande', url: '/vart-erbjudande' },
   { title: 'Fastighetsportfölj', url: '/' },
   { title: 'Investerare', url: '/' },

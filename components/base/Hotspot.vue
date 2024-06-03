@@ -11,6 +11,7 @@
       class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-110"
       format="webp"
       :quality="props.dense ? 10 : 30"
+      loading="lazy"
     />
 
     <BaseOverlay />

@@ -5,7 +5,11 @@
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
-    <NuxtImg :src="`/icons/${currentIcon}.svg`" class="min-w-3 pt-[1px]" />
+    <NuxtImg
+      :src="`/icons/${currentIcon}.svg`"
+      class="min-w-3 pt-[1px]"
+      loading="lazy"
+    />
     <span>{{ props.title }}</span>
   </button>
 </template>
