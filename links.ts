@@ -1,9 +1,11 @@
 interface Link {
   title: string
-  url: string
+  url?: string
   text?: string
   date?: string
   image?: string
+  imageSrc?: string
+  iconSrc?: string
 }
 
 interface FooterLink {
@@ -157,11 +159,35 @@ const hotspotsLinks: Link[] = [
   },
 ]
 
+const steps: Link[] = [
+  {
+    title: 'Steg 1. Ett första möte',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue velit, molestie eu enim ac, malesuada congue quam. Aenean molestie felis vitae nisl iaculis, sed tincidunt mi semper. Morbi facilisis pellentesque nisl quis mollis. Donec interdum quis erat sed malesuada. Nunc ligula massa, porttitor scelerisque elit vitae, pulvinar rhoncus odio. Praesent ac sapien non augue.',
+    iconSrc: '/icons/coffee.svg',
+  },
+  {
+    title: 'Steg 2. Principöverenskommelse',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue velit, molestie eu enim ac, malesuada congue quam. Aenean molestie felis vitae nisl iaculis, sed tincidunt mi semper. Morbi facilisis pellentesque nisl quis mollis. Donec interdum quis erat sed malesuada. Nunc ligula massa, porttitor scelerisque elit',
+    iconSrc: '/icons/handshake.svg',
+  },
+  {
+    title: 'Steg 3. Grundlig genomgång',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue velit, molestie eu enim ac, malesuada congue quam. Aenean molestie felis vitae nisl iaculis, sed tincidunt mi semper. Morbi facilisis pellentesque nisl quis mollis. Donec interdum quis erat sed malesuada. Nunc ligula massa, porttitor scelerisque elit vitae, pulvinar rhoncus odio. Praesent ac sapien non augue. consectetur adipiscing elit. Donec augue velit.',
+    iconSrc: '/icons/document.svg',
+  },
+  {
+    title: 'Steg 4. Dokumentation och avtal',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue velit, molestie eu enim ac, malesuada congue quam. Aenean molestie felis vitae nisl iaculis, sed tincidunt mi semper. Morbi facilisis pellentesque nisl quis mollis. Donec interdum quis erat sed malesuada. Nunc ligula massa, porttitor scelerisque elit vitae, pulvinar rhoncus odio. Praesent ac sapien non augue. ',
+    iconSrc: '/icons/contract.svg',
+  },
+]
+
 export {
   headerLinks,
   footerLinks,
   pressLinks,
   hotspotsLinks,
+  steps,
   type FooterLink,
   type Link,
 }
