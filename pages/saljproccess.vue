@@ -7,7 +7,7 @@
     />
 
     <div
-      class="v-container flex w-full flex-wrap justify-between bg-white py-20"
+      class="v-container flex w-full flex-wrap justify-between bg-white py-10 lg:py-20"
     >
       <div
         v-for="(step, index) in steps"
@@ -35,6 +35,10 @@
         </div>
         <p class="mt-5 font-light">{{ step.text }}</p>
       </div>
+    </div>
+
+    <div class="bg-white pb-10">
+      <BaseVisitCard />
     </div>
   </div>
 </template>
