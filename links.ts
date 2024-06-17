@@ -15,9 +15,9 @@ interface FooterLink {
 }
 
 const headerLinks: Link[] = [
-  { title: 'Om Logistri', url: '/saljproccess' },
+  { title: 'Om Logistri', url: '/om-oss' },
   { title: 'Vårt Erbjudande', url: '/vart-erbjudande' },
-  { title: 'Fastighetsportfölj', url: '/' },
+  { title: 'Fastighetsportfölj', url: '/saljproccess' },
   { title: 'Investerare', url: '/' },
 ]
 
@@ -197,6 +197,16 @@ const steps: Link[] = [
   },
 ]
 
+const aboutUsTexts: string[] = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus, tempus consectetur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ipsum orci, gravida.',
+
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus, tempus consectetur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ipsum orci, gravida.',
+
+  '',
+
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus, tempus consectetur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ipsum orci, gravida.',
+]
+
 export {
   headerLinks,
   footerLinks,
@@ -204,6 +214,7 @@ export {
   hotspotsLinks,
   projectLinks,
   steps,
+  aboutUsTexts,
   type FooterLink,
   type Link,
 }

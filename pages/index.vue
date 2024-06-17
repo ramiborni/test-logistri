@@ -1,7 +1,7 @@
 <template>
   <div>
     <HomeHero />
-    <HomeQuote />
+    <BaseQuote />
     <HomeKeypoints />
     <HomeHotspots />
     <HomePressfeed />

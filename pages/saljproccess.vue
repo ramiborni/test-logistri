@@ -9,32 +9,34 @@
     <div
       class="v-container flex w-full flex-wrap justify-between bg-white py-10 lg:py-20"
     >
-      <div
-        v-for="(step, index) in steps"
-        :key="index"
-        class="w-full lg:w-[38%]"
-        :style="{ marginTop: spacings[index] }"
-      >
-        <BaseMarker :icon-src="step.iconSrc" />
-        <div class="relative mt-6 text-2xl">
-          <div
-            v-show="index !== 0"
-            class="absolute top-1/2 hidden border-b-[1px] border-dashed border-black xl:flex"
-            :style="arrowPos(index)"
-          >
-            <NuxtImg
-              src="/icons/triangle.svg"
-              height="6"
-              width="8"
-              class="absolute -top-[4.9px]"
-              :style="trianglePos(index)"
-            />
-          </div>
+      <ClientOnly>
+        <div
+          v-for="(step, index) in steps"
+          :key="index"
+          class="w-full lg:w-[38%]"
+          :style="{ marginTop: spacings[index] }"
+        >
+          <BaseMarker :icon-src="step.iconSrc" />
+          <div class="relative mt-6 text-2xl">
+            <div
+              v-show="index !== 0"
+              class="absolute top-1/2 hidden border-b-[1px] border-dashed border-black xl:flex"
+              :style="arrowPos(index)"
+            >
+              <NuxtImg
+                src="/icons/triangle.svg"
+                height="6"
+                width="8"
+                class="absolute -top-[4.9px]"
+                :style="trianglePos(index)"
+              />
+            </div>
 
-          <h3>{{ step.title }}</h3>
+            <h3>{{ step.title }}</h3>
+          </div>
+          <p class="mt-5 font-light">{{ step.text }}</p>
         </div>
-        <p class="mt-5 font-light">{{ step.text }}</p>
-      </div>
+      </ClientOnly>
     </div>
 
     <div class="bg-white pb-10">

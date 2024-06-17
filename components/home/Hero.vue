@@ -15,19 +15,21 @@
         </h1>
       </div>
 
-      <video
-        v-if="y < (smaller('lg') ? 1400 : 700)"
-        autoplay
-        muted
-        loop
-        playsinline
-        class="absolute top-0 -z-10 h-[618px] w-full rounded-b-[45px] object-cover object-center xxl:px-[1px]"
-      >
-        <source
-          src="https://videos.pexels.com/video-files/6595364/6595364-hd_1280_720_24fps.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <ClientOnly>
+        <video
+          v-if="y < (smaller('lg') ? 1400 : 700)"
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute top-0 -z-10 h-[618px] w-full rounded-b-[45px] object-cover object-center xxl:px-[1px]"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/6595364/6595364-hd_1280_720_24fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </ClientOnly>
     </div>
   </div>
 </template>
