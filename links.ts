@@ -159,6 +159,21 @@ const hotspotsLinks: Link[] = [
   },
 ]
 
+const projectLinks: Link[] = [
+  {
+    title: 'Projekt Micromatic',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur.',
+    image: 'hotspot-1',
+    url: '/',
+  },
+  {
+    title: 'Projekt Micromatic',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur.',
+    image: 'hotspot-2',
+    url: '/',
+  },
+]
+
 const steps: Link[] = [
   {
     title: 'Steg 1. Ett första möte',
@@ -187,6 +202,7 @@ export {
   footerLinks,
   pressLinks,
   hotspotsLinks,
+  projectLinks,
   steps,
   type FooterLink,
   type Link,

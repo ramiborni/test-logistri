@@ -17,6 +17,7 @@
       </p>
 
       <BaseButton
+        v-if="!plain"
         title="Utforska mer"
         variant="transparent"
         class="mt-6 w-max"
@@ -28,6 +29,7 @@
 <script setup lang="ts">
 interface Props {
   index: number
+  plain?: boolean
 }
 
 const props = defineProps<Props>()

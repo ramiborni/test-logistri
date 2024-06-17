@@ -1,6 +1,6 @@
 <template>
   <div class="v-container flex flex-col-reverse md:flex-row">
-    <div class="flex-1 bg-[#B7DDE1] p-6 md:p-12">
+    <div class="bg-mint flex-1 p-6 md:p-12">
       <h3 class="text-2xl font-medium">Ingeborg Magnusson</h3>
       <h4 class="mt-2 leading-7 tracking-wide">Investerarrelationer</h4>
 
