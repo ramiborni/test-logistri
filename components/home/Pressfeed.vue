@@ -1,9 +1,17 @@
 <template>
   <div class="v-container bg-white pb-[60px]">
     <div class="flex items-center justify-center lg:justify-between">
-      <h4 class="text-2xl tracking-wide lg:text-3xl">Pressmeddelanden</h4>
+      <h4 class="text-2xl tracking-wide lg:text-3xl">
+        {{ props.external ? 'Etableringsmöjligheter' : 'Pressmeddelanden' }}
+      </h4>
 
-      <a href="/" class="hidden text-[15px] underline lg:block">Visa alla</a>
+      <a
+        v-show="!props.external"
+        href="/"
+        class="hidden text-[15px] underline lg:block"
+      >
+        Visa alla
+      </a>
     </div>
 
     <div
@@ -24,8 +32,9 @@
           <a
             :href="item.url"
             class="min-w-max text-xs leading-6 text-[#717171] underline"
-            >Läs mer</a
           >
+            Läs mer
+          </a>
         </div>
       </ClientOnly>
 
@@ -41,6 +50,12 @@
 <script setup lang="ts">
 import { breakpointsTailwind } from '@vueuse/core'
 import { pressLinks } from '@/links'
+
+interface Props {
+  external?: boolean
+}
+
+const props = defineProps<Props>()
 
 const { smaller } = useBreakpoints(breakpointsTailwind)
 
