@@ -1,6 +1,6 @@
 <template>
   <div class="v-container flex flex-col-reverse md:flex-row">
-    <div class="bg-mint flex-1 p-6 md:p-12">
+    <div class="flex-1 bg-mint p-6 md:p-12">
       <h3 class="text-2xl font-medium">Ingeborg Magnusson</h3>
       <h4 class="mt-2 leading-7 tracking-wide">Investerarrelationer</h4>
 
@@ -13,9 +13,9 @@
 
       <div class="items center mt-10 flex font-light">
         <span class="font-bold">Telefon: </span>
-        <span class="pl-1 pt-[3px] text-sm md:pt-[1px] md:text-base"
-          >074934323</span
-        >
+        <span class="pl-1 pt-[3px] text-sm md:pt-[1px] md:text-base">
+          074934323
+        </span>
       </div>
       <div class="font-light">
         <span class="font-bold">E-post: </span>

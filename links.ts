@@ -207,6 +207,56 @@ const aboutUsTexts: string[] = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus, tempus consectetur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ipsum orci, gravida.',
 ]
 
+const investrareAccordions = [
+  {
+    title: 'Investera i Logistri',
+    url: '/',
+    sublinks: [],
+  },
+  {
+    title: 'Rapporter',
+    url: '/',
+    sublinks: [
+      {
+        title: 'Finansiella rapporter',
+        url: '/',
+      },
+      {
+        title: 'Finansiell kalender',
+        url: '/',
+      },
+      {
+        title: 'Pressmeddelanden',
+        url: '/',
+      },
+    ],
+  },
+  {
+    title: 'Aktien',
+    url: '/',
+    sublinks: [
+      {
+        title: 'Utdelning',
+        url: '/',
+      },
+      {
+        title: 'Integritetspolicy',
+        url: '/',
+      },
+    ],
+  },
+  {
+    title: 'Bolagstyrning',
+    url: '/',
+    sublinks: [
+      {
+        title: 'Björn Återkommer',
+        url: '/',
+      },
+    ],
+  },
+]
+
 export {
   headerLinks,
   footerLinks,
@@ -215,6 +265,7 @@ export {
   projectLinks,
   steps,
   aboutUsTexts,
+  investrareAccordions,
   type FooterLink,
   type Link,
 }
