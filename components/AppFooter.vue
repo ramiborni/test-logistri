@@ -24,7 +24,7 @@
           <NuxtLink
             v-for="sublink in link.sublinks"
             :key="sublink.title"
-            :to="sublink.url"
+            :to="{ name: sublink.url }"
             class="mt-4 block text-sm font-light"
           >
             {{ sublink.title }}

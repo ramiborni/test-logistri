@@ -12,7 +12,7 @@
       <NuxtLink
         v-for="sublink in props.link.sublinks"
         :key="sublink.title"
-        :to="sublink.url"
+        :to="{ name: sublink.url }"
         class="mt-4 block"
       >
         {{ sublink.title }}
