@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-	.v-container {
-		@apply px-5
-	}
+  .v-container {
+    @apply px-5
+  }
 
-	@media only screen and (min-width: 1024px) {
-		.v-container {
-			@apply px-20
-		}
-	}
+  @media only screen and (min-width: 1024px) {
+    .v-container {
+      @apply px-20
+    }
+  }
 }

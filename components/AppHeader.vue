@@ -34,6 +34,7 @@
           :src="`/icons/${burger}.svg`"
           class="w-6 lg:hidden"
           quality="10"
+          @click="$emit('openMenu')"
         />
       </div>
     </div>
@@ -42,6 +43,8 @@
 
 <script lang="ts" setup>
 import { headerLinks } from '@/links'
+
+defineEmits(['openMenu'])
 
 const { y } = useWindowScroll()
 const route = useRoute()
