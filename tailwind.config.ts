@@ -9,6 +9,7 @@ export default <Partial<Config>>{
       ...colors,
       smoke: '#F7F7F7',
       mint: '#B7DDE1',
+      moss: '#13322B',
     },
     screens: {
       xs: '420px',

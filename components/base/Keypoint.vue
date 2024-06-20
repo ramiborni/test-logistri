@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-start gap-x-5">
     <NuxtImg
-      src="/icons/keypoint.svg"
+      :src="`/icons/${props.dark ? 'keypoint-dark' : 'keypoint'}.svg`"
       class="min-w-[50px]"
       quality="10"
       loading="lazy"
@@ -30,6 +30,7 @@
 interface Props {
   index: number
   plain?: boolean
+  dark?: boolean
 }
 
 const props = defineProps<Props>()

@@ -17,8 +17,8 @@ interface FooterLink {
 const headerLinks: Link[] = [
   { title: 'Om Logistri', url: '/om-oss' },
   { title: 'Vårt Erbjudande', url: '/vart-erbjudande' },
-  { title: 'Fastighetsportfölj', url: '/saljproccess' },
-  { title: 'Investerare', url: '/' },
+  { title: 'Fastighetsportfölj', url: '/fastighetsportfolj' },
+  { title: 'Investerare', url: '/investerare' },
 ]
 
 const footerLinks: FooterLink[] = [
@@ -28,23 +28,23 @@ const footerLinks: FooterLink[] = [
     sublinks: [
       {
         title: 'Vår verksamhet',
-        url: '/',
+        url: '',
       },
       {
         title: 'Fastigheter',
-        url: '/',
+        url: '',
       },
       {
         title: 'Nyheter',
-        url: '/',
+        url: '',
       },
       {
         title: 'Kontakta oss',
-        url: '/',
+        url: '',
       },
       {
         title: 'Integritetspolicy',
-        url: '/',
+        url: '',
       },
     ],
   },
@@ -54,23 +54,23 @@ const footerLinks: FooterLink[] = [
     sublinks: [
       {
         title: 'Finansiell kalender',
-        url: '/',
+        url: 'finansiell-kalender',
       },
       {
         title: 'Pressmeddelanden',
-        url: '/',
+        url: 'pressmeddelanden',
       },
       {
         title: 'Finansiella rapporter',
-        url: '/',
+        url: 'finansiella-rapporter',
       },
       {
         title: 'Aktien',
-        url: '/',
+        url: 'aktien',
       },
       {
         title: 'Bolagsordning',
-        url: '/',
+        url: '',
       },
     ],
   },
@@ -210,48 +210,48 @@ const aboutUsTexts: string[] = [
 const investrareAccordions = [
   {
     title: 'Investera i Logistri',
-    url: '/',
+    url: 'investera-i-logistri',
     sublinks: [],
   },
   {
     title: 'Rapporter',
-    url: '/',
+    url: 'rapporter',
     sublinks: [
       {
         title: 'Finansiella rapporter',
-        url: '/',
+        url: 'finansiella-rapporter',
       },
       {
         title: 'Finansiell kalender',
-        url: '/',
+        url: 'finansiell-kalender',
       },
       {
         title: 'Pressmeddelanden',
-        url: '/',
+        url: 'pressmeddelanden',
       },
     ],
   },
   {
     title: 'Aktien',
-    url: '/',
+    url: 'aktien',
     sublinks: [
       {
         title: 'Utdelning',
-        url: '/',
+        url: 'utdelning',
       },
       {
         title: 'Integritetspolicy',
-        url: '/',
+        url: 'integritetspolicy',
       },
     ],
   },
   {
     title: 'Bolagstyrning',
-    url: '/',
+    url: 'bolagstyrning',
     sublinks: [
       {
         title: 'Björn Återkommer',
-        url: '/',
+        url: 'bjorn-aterkommer',
       },
     ],
   },
