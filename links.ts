@@ -198,13 +198,8 @@ const steps: Link[] = [
 ]
 
 const aboutUsTexts: string[] = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus, tempus consectetur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ipsum orci, gravida.',
-
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus, tempus consectetur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ipsum orci, gravida.',
-
-  '',
-
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus, tempus consectetur justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ipsum orci, gravida.',
+  'Logistri Fastighets AB är ett växande och långsiktigt värdeskapande fastighetsbolag som specialiserar sig på kommersiella fastigheter för industri, lager och logistik. Företagets vision är att vara en stabil och långsiktig partner genom att erbjuda rationella och hållbara lokaler som har central operativ nytta för Logistris hyresgäster.',
+  'Logistri Fastighets AB (publ), med organisationsnummer 559122–8654, är noterat på Spotlight Stock Market sedan 2017.',
 ]
 
 const investrareAccordions = [

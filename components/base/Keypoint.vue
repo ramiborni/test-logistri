@@ -8,14 +8,15 @@
     />
 
     <div>
-      <p class="text-xl font-light leading-6 tracking-wide">
-        Keypoint {{ props.index }}
-      </p>
+      <div class="flex flex-col gap-y-2">
+        <p class="text-xl font-light leading-6 tracking-wide">
+          {{ props.item.title }}
+        </p>
 
-      <p class="mt-1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-
+        <p class="mt-1 text-3xl">
+          {{ props.item.description }}
+        </p>
+      </div>
       <BaseButton
         v-if="!plain"
         title="Utforska mer"
@@ -29,6 +30,7 @@
 <script setup lang="ts">
 interface Props {
   index: number
+  item: { title: string; description: string }
   plain?: boolean
   dark?: boolean
 }

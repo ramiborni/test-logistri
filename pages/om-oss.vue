@@ -6,11 +6,13 @@
       :image-src="heroData.imageSrc"
     />
 
-    <BaseQuote />
+    <BaseQuote
+      quote='"Att våra hyresgäster ser oss som en långsiktig och stabil partner till deras fortsatta tillväxtresa är helt i linje med vår vision."'
+    />
 
     <div class="v-container bg-smoke py-16 lg:py-32">
       <h2 class="text-3xl tracking-wide lg:text-4xl">
-        Logistri är ett växande fastighetsbolag.
+        Långsiktigt värdeskapande
       </h2>
 
       <div class="mt-10 grid grid-cols-1 gap-x-24 gap-y-10 lg:grid-cols-2">
@@ -21,21 +23,37 @@
     </div>
 
     <div class="v-container bg-white py-16 lg:py-24">
-      <h2 class="text-center text-3xl lg:text-4xl">
-        Logistri är ett växande fastighetsbolag.
-      </h2>
-
       <div
         class="mt-20 grid grid-cols-1 justify-items-center gap-y-16 lg:grid-cols-3 lg:gap-x-24"
       >
-        <div v-for="item in 3" :key="item">
+        <div>
           <div class="flex w-full justify-center">
-            <BaseMarker icon-src="/icons/contract.svg" />
+            <BaseMarker icon-src="/icons/gear.png" />
           </div>
 
           <div class="mt-2 text-center text-xl lg:mt-6">
-            Lorem <br />
-            Principöverenskommelse
+            Verksamhetskritiska <br />
+            fastigheter
+          </div>
+        </div>
+        <div>
+          <div class="flex w-full justify-center">
+            <BaseMarker icon-src="/icons/network.png" />
+          </div>
+
+          <div class="mt-2 text-center text-xl lg:mt-6">
+            Anslutning till strategisk <br />
+            infrastruktur
+          </div>
+        </div>
+        <div>
+          <div class="flex w-full justify-center">
+            <BaseMarker icon-src="/icons/document.png" />
+          </div>
+
+          <div class="mt-2 text-center text-xl lg:mt-6">
+            Långa hyresavtal <br />
+            och partnerskap
           </div>
         </div>
       </div>
@@ -68,7 +86,7 @@
           />
 
           <div class="absolute bottom-0 left-0 z-10 w-full bg-black p-4">
-            <h4 class="text-mint text-[18px]">Projekt Micromatic</h4>
+            <h4 class="text-[18px] text-mint">Projekt Micromatic</h4>
 
             <p class="mt-2 text-[9px] font-light text-white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -89,7 +107,7 @@ const { smaller } = useBreakpoints(breakpointsTailwind)
 
 const heroData = {
   title: 'Ett långsiktigt partnerskap',
-  text: 'Logistri är ett växande fastighetsbolag som äger och förvaltar fastigheter som är operationellt kritiska för våra hyresgästers verksamheter',
+  text: 'Logistri är ett växande fastighetsbolag som äger förvaltar fastigheter som är operationellt kritiska för våra hyresgästers verksamheter',
   imageSrc: '/image.png',
 }
 

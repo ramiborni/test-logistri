@@ -3,11 +3,22 @@
     <p
       class="mx-auto max-w-screen-md text-center text-sm font-light italic leading-6 tracking-wide lg:text-xl"
     >
-      “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-      convallis augue vel euismod auctor. Proin ut tempus nulla. Donec facilisis
-      blandit nunc non ornare. Etiam mattis ac enim nec venenatis.”
+      <!-- Display the custom quote if passed, otherwise show the default one -->
+      {{ quote || defaultQuote }}
     </p>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+// Define a prop to accept a quote
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const props = defineProps<{
+  quote?: string // Optional prop
+}>()
+
+// Define the default quote as a constant
+const defaultQuote =
+  '"Logistris förvaltning ska kännetecknas av långsiktighet, kunskap och tillämpat sunt förnuft"'
+</script>

@@ -7,9 +7,16 @@
     </p>
 
     <div class="grid w-10/12 grid-cols-1 gap-16 lg:w-[53%] lg:grid-cols-2">
-      <BaseKeypoint v-for="item in 4" :key="item" :index="item" />
+      <BaseKeypoint v-for="item in data" :key="item" :item="item" />
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { defineProps } from 'vue'
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const props = defineProps<{
+  data: Array<any> // Define the type of data you expect
+}>()
+</script>
