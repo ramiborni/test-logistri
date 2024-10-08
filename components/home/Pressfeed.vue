@@ -83,12 +83,12 @@ console.log(apiData.value)
 const limitedLinks = computed(() => {
   if (props.viewAll) {
     // If 'viewAll' is true, show all items
-    return apiData.value.items
+    return (apiData as any).value.items
   } else {
     // Limit the number of items for smaller screens and large screens if 'viewAll' is false
     return smaller('lg').value
-      ? apiData.value.items.slice(0, 5)
-      : apiData.value.items.slice(0, 9)
+      ? (apiData.value as any).items.slice(0, 5)
+      : (apiData.value as any).items.slice(0, 9)
   }
 })
 

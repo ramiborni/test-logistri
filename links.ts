@@ -248,6 +248,22 @@ const investrareAccordions = [
         title: 'Björn Återkommer',
         url: 'bjorn-aterkommer',
       },
+      {
+        title: 'Bolagsordning',
+        url: 'bolagsordning',
+      },
+      {
+        title: 'Bolagsstämmor',
+        url: 'bolagsstammor',
+      },
+      {
+        title: 'Styrelse',
+        url: 'styrelse',
+      },
+      {
+        title: 'Ledning',
+        url: 'ledning',
+      },
     ],
   },
 ]

@@ -53,33 +53,18 @@
         </div>
       </div>
 
-      <div class="mt-6 bg-smoke p-6 md:p-12 lg:p-24">
-        <h3 class="text-4xl">Lorem ipsum</h3>
-
-        <p class="mt-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus
-          semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus,
-          tempus consectetur justo. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Integer ipsum orci,
-          gravida.
-        </p>
-
-        <p class="mt-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus
-          semper tellus et accumsan. Praesent nisl nibh, sodales at eros luctus,
-          tempus consectetur justo. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. Integer ipsum orci,
-          gravida.
-        </p>
+      <div class="my-0 flex flex-row gap-4 items-center">
+        <iframe
+          class="w-full mt-32"
+          height="550px"
+          src="https://widget.datablocks.se/api/rose/widgets/kpi-waterfall?token=28c807c5-6b3e-45fd-93bf-cf14ddc1a352"
+        ></iframe>
+        <iframe
+          src="https://widget.datablocks.se/api/rose/widgets/kpi-graph?token=37f93b0d-4e1d-4ae6-8b96-0d87d2b05807&load-highcharts=true"
+          class="w-full"
+          height="420px"
+        ></iframe>
       </div>
-
-      <NuxtImg
-        src="/images/banner.png"
-        loading="lazy"
-        format="webp"
-        quality="30"
-        class="mt-6"
-      />
 
       <div class="my-6 flex flex-col gap-6 lg:flex-row">
         <div class="bg-smoke p-8 md:p-16 lg:aspect-[1/0.75] lg:w-[65%]">
