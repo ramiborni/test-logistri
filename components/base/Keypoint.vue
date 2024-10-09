@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-start gap-x-5">
+  <div v-if="props.item" class="flex items-start gap-x-5">
     <NuxtImg
       :src="`/icons/${props.dark ? 'keypoint-dark' : 'keypoint'}.svg`"
       class="min-w-[50px]"

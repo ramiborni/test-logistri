@@ -7,7 +7,12 @@
     </p>
 
     <div class="grid w-10/12 grid-cols-1 gap-16 lg:w-[53%] lg:grid-cols-2">
-      <BaseKeypoint v-for="item in data" :key="item" :item="item" />
+      <BaseKeypoint
+        v-for="item in data"
+        :key="item"
+        :index="data.indexOf(item)"
+        :item="item"
+      />
     </div>
   </div>
 </template>
