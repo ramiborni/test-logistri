@@ -77,8 +77,6 @@ const { data: apiData, pending } = await useFetch(
   { server: true }, // Force server-side fetch
 )
 
-console.log(apiData.value)
-
 // Computed property to get the links, adjust based on 'viewAll' prop
 const limitedLinks = computed(() => {
   if (props.viewAll) {
