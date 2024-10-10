@@ -3,7 +3,7 @@
     <StockTicker v-if="showStockTicker" />
     <ClientOnly>
       <div
-        class="v-container flex w-full max-w-screen-xxl items-center justify-between py-5 transition-all duration-500"
+        class="v-container z-40 flex w-full max-w-screen-xxl items-center justify-between py-5 transition-all duration-500"
         :class="[headerClass, { 'mt-8': showStockTicker }]"
       >
         <div class="flex items-center gap-7 xl:gap-14">
