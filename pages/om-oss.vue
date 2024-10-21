@@ -58,14 +58,11 @@
         </div>
       </div>
     </div>
-    <div class="v-container h-96 bg-red-500 px-0 lg:h-[540px]">
-      <NuxtImg
-        src="/images/drone-capture.png"
-        loading="lazy"
-        format="webp"
-        quality="30"
-        class="h-full w-full object-cover object-center"
-      />
+    <div class="v-container relative h-96 overflow-hidden lg:h-[540px]">
+      <div
+        class="absolute inset-0 bg-cover bg-fixed bg-center bg-no-repeat"
+        style="background-image: url('/images/drone-capture.png')"
+      ></div>
     </div>
 
     <div class="v-container bg-white py-16 lg:py-24 xxl:px-0">
